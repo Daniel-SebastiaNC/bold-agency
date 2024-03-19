@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-image: url(images/bg.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+}
+
+.top-header {
+    display: flex;
+    padding: 0 2%;
+    margin: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #F0F4FA;
+    font-weight: bold;
+}
+
+nav a:hover{
+    border-bottom: solid 2px #FFDD33;
+}
+
+.contato {
+    background-color: #0F3FD3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mockup{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.mockup img{
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.text-mockup {
+    color: white;
+    margin: 20px auto;
+}
+
+.text-mockup h1 {
+    font-size: 64px;
+}
+
+.text-mockup p {
+    font-size: 20px;
+}
+
+.parceiros {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.parceiros img {
+    width: calc(100%/5);
+    margin: 10px;
+}
+
+.por-que-nos {
+    width: 95%;
+    background-color: #FBFCFE;
+    margin: 20px auto;
+    padding: 20px;
+    
+}
+
+.por-que-nos h2 {
+    font-size: 64px;
+    text-align: center;
+}
+
+.por-que-nos p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.diferencial {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.box-diferecial {
+    width: 30%;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 10px;
+    margin: 10px 1%;
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+}
+
+.box-diferecial h3 {
+    margin: 10px 20px;
+    font-size: 28px;
+}
+
+.box-diferecial p {
+    margin: 10px 20px;
+    font-size: 16px;
+    color: #7E92AC;
+    text-align: left;
+}
+
+@media screen and (max-width: 1100px){
+    .diferencial {
+        flex-direction: column;
+    }
+    .box-diferecial {
+        max-width: 500px;
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    .parceiros{
+        flex-direction: column;
+    }
+    .parceiros img {
+        width: 100%;
+        margin: 10px;
+        max-width: 260px;
+    }
+}
