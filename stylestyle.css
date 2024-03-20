@@ -169,6 +169,61 @@ nav a:hover{
     border-radius: 14px;
 }
 
+.beneficio{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.beneficio article {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+}
+
+.beneficio h2 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.mackbook {
+    width: 50%;
+    max-width: 800px;
+}
+
+.beneficio ul{
+    margin: 20px auto;
+    list-style: none;
+}
+
+.beneficio li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    color: #7E92AC;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.beneficio li img {
+    width: 56px;
+}
+
+.beneficio a {
+    width: 250px;
+    margin: 20px auto;
+    background: #255AFF;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 1100px){
     .diferencial {
         flex-direction: column;
@@ -178,7 +233,18 @@ nav a:hover{
         width: 90%;
         margin: 10px auto;
     }
-    
+    .beneficio {
+        flex-direction: column;
+        width: 100%;
+    }
+    .beneficio article{
+        width: 90%;
+        min-width: 400px;
+    }
+    .mackbook {
+        width: 90%;
+        min-width: 400px;
+    }
 }
 
 @media screen and (max-width: 750px){
