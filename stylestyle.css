@@ -30,7 +30,7 @@ nav ul li {
     margin: 0 10px;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: #F0F4FA;
     font-weight: bold;
@@ -129,6 +129,44 @@ nav a:hover{
     font-size: 16px;
     color: #7E92AC;
     text-align: left;
+}
+
+.banner {
+    margin: 20px 0;
+    width: 100%;
+    background-image: url(images/banner_meio.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.banner h2{
+    font-weight: normal;
+    font-size: 64px;
+    margin: 20px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.banner a {
+    color: #0F3FD3;
+    text-decoration: none;
+    padding: 14px;
+    background-color: #FFDD33;
+    margin: 30px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 14px;
 }
 
 @media screen and (max-width: 1100px){
