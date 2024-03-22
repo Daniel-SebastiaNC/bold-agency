@@ -5,21 +5,35 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
 header {
     background-image: url(images/bg.svg);
     background-position: center;
     background-size: cover;
     min-height: 700px;
-    padding: 20px 0 80px 0;
+    padding: 0px 0 80px 0;
+}
+
+h2, h1 {
+    font-size: 55px !important;
+    text-align: center;
 }
 
 .top-header {
+    padding: 0 2%;
+    margin: 0 5%;
+}
+
+
+.menu {
     display: flex;
     padding: 0 2%;
     margin: 0 5%;
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 nav ul {
     display: flex;
@@ -322,7 +336,7 @@ li.slick-active button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 25px auto;
+    margin: 50px auto;
     width: 80%;
     /*border: solid 1px #0F3FD3;*/
 }
@@ -359,7 +373,54 @@ li.slick-active button{
     border-radius: 10px;
     color: white;
     border: #0F3FD3;
+    cursor: pointer;
 }
+
+footer {
+    display: flex;
+    background-color: #255AFF;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 16px;
+    color: white;
+}
+
+i {
+    color: white;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: none;
+    width: 100%;
+}
+
+.close-menu {
+    display: none;
+}
+
+.open-menu {
+    background-color: #0F3FD3;
+    padding: 14px;
+    margin: 0;
+}
+
+.open-menu ul {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu {
+    padding: 14px;
+    margin: 0;
+}
+
 
 @media screen and (max-width: 1100px){
     .diferencial {
@@ -382,7 +443,7 @@ li.slick-active button{
         width: 90%;
         min-width: 400px;
     }
-    .top-header {
+    .menu {
         flex-direction: column;
     }
     .top-header nav ul {
@@ -394,7 +455,7 @@ li.slick-active button{
     }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 768px){
     .parceiros{
         flex-direction: column;
     }
@@ -405,5 +466,30 @@ li.slick-active button{
     }
     .container-slider-single {
         max-width: 600px;
+    }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer ul{
+        flex-direction: column;
+        
+    }
+    footer li a{
+        display: block;
+        margin: 7px auto;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .top-header {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
     }
 }

@@ -13,16 +13,55 @@
 <body>
     <header>
         <section class="top-header">
-            <h1 class="logo"><a href="/"><img src="images/logoagencia.svg" alt="Agência Bold"></a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Por que nós?</a></li>
-                    <li><a href="#">Depoimentos</a></li>
-                    <li><a href="#" class="contatoNav">Entre em contato</a></li>
-                </ul>
-            </nav>
+            <div class="menu">
+                <h1 class="logo"><a href="/"><img src="images/logoagencia.svg" alt="Agência Bold"></a></h1>
+           
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Por que nós?</a></li>
+                        <li><a href="#">Depoimentos</a></li>
+                        <li><a href="#" class="contatoNav">Entre em contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="menu-mobile menu">
+                <div class="mobile" style="display: flex; justify-content: space-between; align-items: center; margin: 10px 15px;">                
+                    <h1 class="logo"><a href="/"><img src="images/logoagencia.svg" alt="Agência Bold"></a></h1>                
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>            
+                <nav class="close-menu">                
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Por que nós?</a></li>
+                        <li><a href="#">Depoimentos</a></li>
+                        <li><a href="#">Entre em contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <script>
+                let menuPoint = document.querySelectorAll('i')[0];
+                let menu = document.querySelectorAll('.close-menu')[0];
+                let backTitle = document.querySelectorAll('.menu-mobile')[0];
+                menuPoint.addEventListener('click', () =>{
+                    
+                    if (menu.classList.contains('close-menu')) {
+                        menu.classList.remove('close-menu')
+                        menu.classList.add('open-menu')
+                        backTitle.classList.add('open-menu');
+                        
+                    } else {
+                        menu.classList.add('close-menu')
+                        menu.classList.remove('open-menu')
+                        backTitle.classList.remove('open-menu');
+                    }
+                })
+            </script>
         </section>
+        
 
         <section class="mockup">
             <div class="text-mockup">
@@ -180,10 +219,23 @@
                 <input type="text" name="nome" placeholder="Seu nome...">
                 <input type="email" name="email" placeholder="Seu email...">
                 <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" >
             </form>
 
         </section>
     </main>
+    <!--<div style="background-color: aqua; width: 768px; height: 10px;"></div>-->
+
+    <footer>
+        <p>Desenvolvido com o Dandas</p>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Por que nós?</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#" class="contatoNav">Entre em contato</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
